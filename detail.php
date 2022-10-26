@@ -5,6 +5,7 @@
    <meta charset="utf-8">
    <title>Profil Calon ~ E - Voting</title>
    <link rel="stylesheet" href="./assets/css/foundation.min.css" />
+   <link rel="icon" href="../assets/img/logo1.png" />
    <style type="text/css">
       body {
          background-color: #011b3b;

@@ -51,8 +51,9 @@ if (isset($_POST['submit'])) {
 
 <head>
    <meta charset="utf-8">
-   <title>E - Voting</title>
+   <title>Voting</title>
    <link rel="stylesheet" href="./assets/css/foundation.min.css" />
+   <link rel="icon" href="./assets/img/logo1.png" />
    <link rel="stylesheet" href="./assets/css/custom.css" />
    <style type="text/css">
       #content-slider {
@@ -95,7 +96,7 @@ if (isset($_POST['submit'])) {
          }
          ?>
 
-         <footer><?php echo date('Y'); ?> &copy; SMK Al-Husna</footer>
+         <footer><?php echo date('Y'); ?> &copy; SMKN 1 SAYUNG</footer>
       </div>
    </div>
    <script type="text/javascript" src="./assets/js/jquery.js"></script>

@@ -11,8 +11,9 @@ if (!isset($_SESSION['siswa'])) {
 
 <head>
    <meta charset="utf-8">
-   <title>E - Voting</title>
+   <title>Voting Ketua Osis</title>
    <link rel="stylesheet" href="./assets/css/foundation.min.css" />
+   <link rel="icon" href="./assets/img/logo1.png" />
    <link rel="stylesheet" href="./assets/css/animate.css" />
    <style media="screen">
       body {
