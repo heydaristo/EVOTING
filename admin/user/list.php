@@ -35,7 +35,7 @@ if(!isset($_SESSION['id_admin'])) {
       		}
             $start  = ($hlm - 1) * 5;
 
-            $sql = mysqli_query($con, "SELECT * FROM t_user JOIN t_kelas ON t_user.id_kelas = t_kelas.id_kelas LIMIT $start,5");
+            $sql = mysqli_query($con, "SELECT * FROM t_user JOIN t_kelas ON t_user.id_kelas = t_kelas.id_kelas LIMIT $start,100");
 
             if (mysqli_num_rows($sql) > 0) {
 
