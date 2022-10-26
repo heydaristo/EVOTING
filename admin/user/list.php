@@ -28,14 +28,14 @@ if(!isset($_SESSION['id_admin'])) {
 
             if (isset($_GET['hlm'])) {
       			$hlm = $_GET['hlm'];
-      			$no  = (5*$hlm) - 4;
+      			$no  = (51*$hlm) - 50;
       		} else {
       			$hlm = 1;
       			$no  = 1;
       		}
-            $start  = ($hlm - 1) * 5;
+            $start  = ($hlm - 1) * 51;
 
-            $sql = mysqli_query($con, "SELECT * FROM t_user JOIN t_kelas ON t_user.id_kelas = t_kelas.id_kelas LIMIT $start,100");
+            $sql = mysqli_query($con, "SELECT * FROM t_user JOIN t_kelas ON t_user.id_kelas = t_kelas.id_kelas LIMIT $start,50");
 
             if (mysqli_num_rows($sql) > 0) {
 
@@ -98,7 +98,7 @@ if(!isset($_SESSION['id_admin'])) {
 
          $hitung = mysqli_num_rows(mysqli_query($con, "SELECT * FROM t_user"));
 
-         $total  = ceil($hitung / 5);
+         $total  = ceil($hitung / 10);
          for ($i = 1; $i <= $total ; $i++) { //start for
       ?>
             <li <?php if ($hlm != $i) { echo 'class="waves-effect"'; } else { echo 'class="active"'; } ?>>
