@@ -13,6 +13,7 @@ include('../include/connection.php');
       <meta charset="utf-8">
       <title>Dashboard ~ E Voting</title>
       <link rel="stylesheet" href="../assets/css/foundation.min.css" />
+      <link rel="icon" href="../assets/img/logo1.png" />
       <link rel="stylesheet" href="../assets/css/dashboard.css" />
    </head>
    <body>

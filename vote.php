@@ -101,7 +101,7 @@ if (!isset($_SESSION['siswa'])) {
    <script type="text/javascript">
       wow = new WOW({
          animateClass: 'animated',
-         offset: 100,
+         offset: 10,
          callback: function(box) {
             console.log("WOW: animating <" + box.tagName.toLowerCase() + ">")
          }

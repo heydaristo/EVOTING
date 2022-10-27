@@ -55,6 +55,7 @@ if(isset($_POST['submit'])) {
       <meta charset="utf-8">
       <title>Admin Login ~ E-Vote</title>
       <link rel="stylesheet" href="../assets/css/foundation.min.css">
+      <link rel="icon" href="../assets/img/logo1.png" />
       <style media="screen" type="text/css">
       body {
          background: #f9f9f9;

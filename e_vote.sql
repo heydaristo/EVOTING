@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.2.0
+-- version 5.1.1
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Oct 26, 2022 at 02:48 PM
--- Server version: 10.4.24-MariaDB
--- PHP Version: 7.4.29
+-- Generation Time: Oct 27, 2022 at 09:42 AM
+-- Server version: 10.4.21-MariaDB
+-- PHP Version: 7.3.30
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -51,10 +51,19 @@ CREATE TABLE `t_kandidat` (
   `id_kandidat` smallint(4) NOT NULL,
   `nama_calon` varchar(50) NOT NULL,
   `foto` varchar(255) NOT NULL,
-  `visi` varchar(255) NOT NULL,
-  `misi` varchar(255) NOT NULL,
+  `visi` text NOT NULL,
+  `misi` text NOT NULL,
   `periode` varchar(9) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `t_kandidat`
+--
+
+INSERT INTO `t_kandidat` (`id_kandidat`, `nama_calon`, `foto`, `visi`, `misi`, `periode`) VALUES
+(3, 'M.KHUSNU MAROM', '0.13819100 1666842858.jpeg', 'Menjadikan SMK yang berkualitas, aktif, dan berprestasi dengan berlandaskan iman dan takwa.', '1.Memperkuat rasa kekeluargaan antarsiswa dan guru.\r\n2.Menanamkan sikap disiplin pada semua siswa.\r\n3.Meningkatkan kesadaran siswa tentang kebersihan sekolah.\r\n4.Mengembangkan bakat dan potensi yang dimiliki siswa.', '2022/2023'),
+(4, 'SILVI WIDIA MAULANI', '0.45763800 1666843043.jpeg', 'BELUM', 'ADA', '2022/2023'),
+(5, 'SETYA NENG RAHAYU', '0.22576100 1666843094.jpeg', 'Meningkatkan keimanan dan ketakwaan para siswa dan siswi terhadap Tuhan Yang Maha Esa, dan Meningkatkan kepedulian sekolah, Serta Mewujudkan salah satu yel-yel SMK N 1 SAYUNG yaitu : Berkarya Bersama Bisa.', '1.Meningkatkan kegiatan-kegiatan keagamaan bagi seluruh siswa/siswi SMK N 1 SAYUNG.\r\n2.Mengoptimalkan kreativitas para siswa/siswi melalui ekstrakurikuler yang ada di sekolah.\r\n3.Membantu siswa dan siswi  SMK N 1 SAYUNG menuangkan ide/gagasanya dengan berkarya/berkreasi sesuai dengan keinginannya.\r\n4.Bersama-sama kita membangun lingkungan SMK N 1 SAYUNG menjadi sekolah yang menjunjung tinggi sopan santun, dan tata krama.\r\n5. Mendorong siswa siswi SMK N 1 SAYUNG untuk mewujudkan apa yang ingin ia capai, dan menjadikan osis sebagai perantara dalam mewujudkannya.', '2022/2023');
 
 -- --------------------------------------------------------
 
@@ -110,13 +119,6 @@ CREATE TABLE `t_suara` (
   `id_kandidat` smallint(4) NOT NULL,
   `periode` varchar(9) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
---
--- Dumping data for table `t_suara`
---
-
-INSERT INTO `t_suara` (`nis`, `id_kandidat`, `periode`) VALUES
-('2996', 1, '2022/2023');
 
 -- --------------------------------------------------------
 
@@ -249,7 +251,7 @@ ALTER TABLE `t_admin`
 -- AUTO_INCREMENT for table `t_kandidat`
 --
 ALTER TABLE `t_kandidat`
-  MODIFY `id_kandidat` smallint(4) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id_kandidat` smallint(4) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
